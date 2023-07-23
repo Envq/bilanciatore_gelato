@@ -1,0 +1,51 @@
+# SLNG = Solidi del Latte Non Grassi
+# Per i prodotti a base latte usare SLNG al posto di solidi
+
+latte intero: 
+    zuccheri: 4.5
+    grassi:   3.3
+    SLNG:     3.5
+    solidi:   0
+
+panna: 
+    zuccheri: 3.2
+    grassi:   35
+    SLNG:     2.1
+    solidi:   0
+
+latte magro in polvere: 
+    zuccheri: 0
+    grassi:   0
+    SLNG:     100
+    solidi:   0
+
+saccarosio: 
+    zuccheri: 100
+    grassi:   0
+    SLNG:     0
+    solidi:   0
+
+destrosio: 
+    zuccheri: 100
+    grassi:   0
+    SLNG:     0
+    solidi:   0
+
+gomma arabica: 
+    zuccheri: 100
+    grassi:   0
+    SLNG:     0
+    solidi:   0
+
+melone: 
+    zuccheri: 8
+    grassi:   0
+    SLNG:     0
+    solidi:   5
+
+burro: 
+    zuccheri: 0
+    grassi:   82
+    SLNG:     0
+    solidi:   0
+    

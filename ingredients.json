@@ -1,230 +1,50 @@
 {
-    "latte natuale": {
-        "zuccheri": 0,
-        "grassi": 3,
-        "SLNG": 9,
-        "altri": 0
-    },
     "latte intero": {
-        "zuccheri": 28.75,
-        "grassi": 50.63,
-        "SLNG": 9,
-        "altri": 0
+        "zuccheri": 4.5,
+        "grassi": 3.3,
+        "SLNG": 3.5,
+        "solidi": 0
+    },
+    "panna": {
+        "zuccheri": 3.2,
+        "grassi": 35,
+        "SLNG": 2.1,
+        "solidi": 0
     },
     "latte magro in polvere": {
         "zuccheri": 0,
         "grassi": 0,
         "SLNG": 100,
-        "altri": 0
-    },
-    "latte intero in polvere": {
-        "zuccheri": 0,
-        "grassi": 26,
-        "SLNG": 72,
-        "altri": 0
-    },
-    "latte condensato zuccherato": {
-        "zuccheri": 40,
-        "grassi": 12,
-        "SLNG": 27,
-        "altri": 0
-    },
-    "panna liquida": {
-        "zuccheri": 0,
-        "grassi": 35,
-        "SLNG": 6,
-        "altri": 0
+        "solidi": 0
     },
     "burro": {
         "zuccheri": 0,
         "grassi": 82,
         "SLNG": 0,
-        "altri": 0
+        "solidi": 0
     },
     "saccarosio": {
         "zuccheri": 100,
         "grassi": 0,
         "SLNG": 0,
-        "altri": 0
+        "solidi": 0
     },
     "destrosio": {
         "zuccheri": 100,
         "grassi": 0,
         "SLNG": 0,
-        "altri": 0
+        "solidi": 0
     },
-    "sciroppo di glucosio": {
-        "zuccheri": 80,
+    "gomma arabica": {
+        "zuccheri": 100,
         "grassi": 0,
         "SLNG": 0,
-        "altri": 0
-    },
-    "zucchero invertito": {
-        "zuccheri": 80,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 0
-    },
-    "miele": {
-        "zuccheri": 80,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 0
-    },
-    "tuorlo uovo": {
-        "zuccheri": 0,
-        "grassi": 30,
-        "SLNG": 0,
-        "altri": 15
-    },
-    "albume": {
-        "zuccheri": 0,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 12
-    },
-    "uovo intero": {
-        "zuccheri": 0,
-        "grassi": 11,
-        "SLNG": 0,
-        "altri": 14
-    },
-    "stabilizzanti": {
-        "zuccheri": 0,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 100
-    },
-    "albicocca": {
-        "zuccheri": 9,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 9
-    },
-    "ananas": {
-        "zuccheri": 8,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 3
-    },
-    "anguria": {
-        "zuccheri": 6,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 5
-    },
-    "arancia": {
-        "zuccheri": 6,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 8
-    },
-    "banana": {
-        "zuccheri": 16,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 9
-    },
-    "ciliegie": {
-        "zuccheri": 10,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 6
-    },
-    "fichi": {
-        "zuccheri": 12,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 8
-    },
-    "fragole": {
-        "zuccheri": 7,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 7
-    },
-    "lamponi": {
-        "zuccheri": 7,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 8
-    },
-    "limone": {
-        "zuccheri": 3,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 7
-    },
-    "mandarino": {
-        "zuccheri": 8,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 8
-    },
-    "mango": {
-        "zuccheri": 12,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 8
-    },
-    "maracuja": {
-        "zuccheri": 7,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 4
-    },
-    "mela": {
-        "zuccheri": 8,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 6
+        "solidi": 0
     },
     "melone": {
         "zuccheri": 8,
         "grassi": 0,
         "SLNG": 0,
-        "altri": 5
-    },
-    "papaia": {
-        "zuccheri": 8,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 7
-    },
-    "pere": {
-        "zuccheri": 9,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 5
-    },
-    "pesche": {
-        "zuccheri": 9,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 9
-    },
-    "pomodoro": {
-        "zuccheri": 4,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 4
-    },
-    "pompelmo": {
-        "zuccheri": 8,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 6
-    },
-    "ribes": {
-        "zuccheri": 6,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 9
-    },
-    "uva": {
-        "zuccheri": 20,
-        "grassi": 0,
-        "SLNG": 0,
-        "altri": 5
+        "solidi": 5
     }
 }
