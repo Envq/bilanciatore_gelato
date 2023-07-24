@@ -1,4 +1,4 @@
-import bilanciatore
+from balancer import Balancer
 
 
 ####################################
@@ -8,7 +8,7 @@ name = 'gelato al melone'
 
 
 if __name__ == "__main__":
-    recipe, ingredients = bilanciatore.init(name)
-
-    print(recipe)
-    print(ingredients)
+    b = Balancer(name, size)
+    b.printTable()
+    # b.process()
+    # b.print()

@@ -1,8 +1,8 @@
 gelato al melone:
-    - latte intero
-    - panna
-    - saccarosio
-    - destrosio
-    - latte magro in polvere
-    - gomma arabica
-    - melone
+    latte intero            : 0.15
+    panna                   : 0.19
+    saccarosio              : 0.08
+    destrosio               : 0.04
+    latte magro in polvere  : 0.08
+    gomma arabica           : 0.01
+    melone                  : 0.45
