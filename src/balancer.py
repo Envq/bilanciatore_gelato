@@ -6,9 +6,12 @@ np.set_printoptions(precision=2, suppress=True)
 
 
 class Balancer:
-    name = ""
-    size = 100
-    ingrediets = dict()
+    name        = ""
+    size        = 1
+    recipe      = None
+    labels      = list()
+    ingredients = list()
+    limits      = ["16-22", "6-10", "8-11", "1-5", "", "32-43", "100"]
 
     def __init__(self, name, size):
         self.name = name
@@ -28,41 +31,51 @@ class Balancer:
             if ingredientsAvailables is None:
                 print('ingredients.yaml not exists')
                 exit(-1)
+        matrix = list()
         for name, percentage in recipe.items():
             if name not in ingredientsAvailables:
                 print(f'"{name}" not exists in ingredients.yaml')
                 exit(-1)
             ingredient = ingredientsAvailables[name]
-            self.ingrediets[name] = ingredient
-            self.ingrediets[name]['solidi totali'] = sum(ingredient.values())
-            self.ingrediets[name]['percentuale'] = percentage
+            self.ingredients.append(name)
+            row = list(ingredient.values()) + [sum(ingredient.values()), 100, percentage]
+            matrix.append(row)
 
+        macro = list(ingredientsAvailables[list(ingredientsAvailables)[0]].keys())
+        self.labels = ["ingredienti"] + macro + ["solidi totali", "peso", "percentuale"]
+        self.recipe = np.array(matrix)
+        # print(self.labels)
+        # print(self.ingredients)
+        # print(self.recipe)
 
-    def printList(self):
-        for name, values in self.ingrediets.items():
-            print(f'{name}:')
-            for k, v in values.items():
-                print(f'  - {k:<20}: {round(v, 2)}')
-
-
-    def printTable(self):
-        macro = list(self.ingrediets[list(self.ingrediets)[0]].keys())
-        table = [["ingredienti"] + macro]
-        for k, v in self.ingrediets.items():
-            l = list()
-            l.append(k)
-            for e in macro:
-                l.append(v[e])
-            table.append(l)
-
-        print(table)
-
-        table_str = tabulate(table, headers='firstrow', tablefmt='grid')
-        print(table_str)
 
     def process(self):
-        for macro in self.ingrediets.values():
-            percentage = macro['percentuale']
-            for k, v in macro.items():
-                if k != 'percentuale':
-                    v *= percentage
+        # get percentage column
+        percentage = self.recipe[:, -1]
+        # remove last column 
+        self.recipe = self.recipe[:, :-1]
+        # multiply for percentage
+        self.recipe *= percentage[:, np.newaxis]
+        # get total row
+        self.ingredients.append("somma")
+        self.recipe = np.vstack((self.recipe, np.sum(self.recipe, axis=0).tolist()))
+        #round all
+        self.recipe = np.round(self.recipe, decimals=4)
+        self.ingredients.append("limiti")
+        self.recipe = np.vstack((self.recipe, self.limits))
+
+
+    def printRecipe(self):
+        data = self.recipe.tolist()
+        for i in range(len(data)):
+            data[i] = [self.ingredients[i]] + data[i]
+        table = tabulate(data, headers=self.labels, tablefmt='grid')
+        print(table)
+
+
+    def printDosage(self):
+        # get weight column
+        weight = self.recipe[:, -1].astype(float) * self.size / 100
+        print(f"{self.name}: {self.size}g")
+        for i in range(len(self.ingredients)-2):
+            print(f"  - {self.ingredients[i]:<25}: {weight[i]} g")
