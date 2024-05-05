@@ -4,7 +4,8 @@ from balancer import Balancer
 ####################################
 size = 700
 # name = 'gelato al melone'
-name = 'fior di latte'
+# name = 'fior di latte'
+name = 'gelato al melone burro'
 ####################################
 
 

@@ -7,6 +7,23 @@ gelato al melone:
     gomma arabica           : 0.01
     melone                  : 0.45
 
+gelato al melone legacy:
+    latte intero            : 0.27
+    panna                   : 0.21
+    saccarosio              : 0.12
+    destrosio               : 0.04
+    gomma arabica           : 0.01
+    melone                  : 0.30
+    
+gelato al melone burro:
+    latte intero            : 0.36
+    latte magro in polvere  : 0.02
+    burro                   : 0.08
+    saccarosio              : 0.10
+    destrosio               : 0.04
+    gomma arabica           : 0.01
+    melone                  : 0.45
+
 fior di latte:
     latte intero            : 0.55
     panna                   : 0.20
